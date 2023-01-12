@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav {
+      background-color: crimson;
+    }
+
+    header nav ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+
+    header nav ul li {
+      list-style: none;
+      width: 10%;
+      text-align: center;
+      color: #fff;
+      transition: 1s;
+      cursor: pointer;
+    }
+
+    header nav ul li:hover {
+      background-color: #fff;
+      color: crimson;
+    }
+
+    .content {
+      display: flex;
+      gap: 20px;
+    }
+
+    /* .left,
+    .center,
+    .right {
+      border: 5px solid black;
+    } */
+    .left p,
+    .center p,
+    .right p {
+      text-align: justify;
+    }
+    .left img,
+    .center img,
+    .right img {
+      width: 100%;
+    }
+    .left {
+      width: 60%;
+    }
+    .center,
+    .right {
+      width: 20%;
+    }
+    header .title,
+    header nav,
+    .content {
+      padding: 0 15px;
+    }
+    .footer {
+      padding: 50px 15px;
+      text-align: center;
+      background: #222;
+    }
+    .footer h1 {
+      color: #fff;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="title">
+      <h1>Bee.ru</h1>
+      <p>itc bootcamp</p>
+    </div>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>News</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <section class="content">
+    <div class="left">
+      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, dolorum!</h1>
+      <img
+        src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg"
+        alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+        <img
+        src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg"
+        alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+    </div>
+    <div class="center">
+      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, dolorum!</h1>
+      <img
+        src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg"
+        alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+        <img
+        src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg"
+        alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+    </div>
+    <div class="right">
+      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, dolorum!</h1>
+      <img
+        src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg"
+        alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas veniam architecto maiores iure
+        praesentium possimus animi excepturi pariatur ducimus incidunt dolore est sit ratione, deleniti, rerum tempora
+        rem sed.</p>
+        <img
+        src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg"
+        alt="">
+    </div>
+  </section>
+  <footer class="footer">
+    <h1>itc bootcamp</h1>
+  </footer>
+</body>
+
+</html>

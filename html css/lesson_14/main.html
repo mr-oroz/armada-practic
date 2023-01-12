@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .phone,
+    .Planshet,
+    .Computer {
+      text-align: center;
+    }
+
+    .phone {
+      width: 300px;
+    }
+
+    @media screen and (max-width: 300px) {
+      .phone {
+        font-size: 25px;
+      }
+
+      .Planshet,
+      .Computer {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 600px) and (min-width: 300px) {
+      .Planshet {
+        font-size: 35px;
+      }
+
+      .Computer,
+      .phone {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      .Computer {
+        font-size: 45px;
+      }
+
+      .phone,
+      .Planshet {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="Computer">Computer</div>
+  <div class="Planshet">Planshet</div>
+  <div class="phone">phone</div>
+</body>
+
+</html>

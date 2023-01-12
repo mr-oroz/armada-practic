@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* align-items 
+    center 
+    flex-start 
+    flex-end 
+    stretch 
+    baseline;  */
+    /* flex-direction row row-reverse column column-reverse */
+    .container {
+      background-color: skyblue;
+      margin: 10px;
+      display: flex;
+      /* flex-direction: row-reverse; */
+      /* flex-wrap: ; */
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: 100vh;
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      color: white;
+    }
+    /* .parent {
+      align-self: flex-start;
+    } */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+  </div>
+</body>
+</html>

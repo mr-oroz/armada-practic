@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ease,
+      .ease-out,
+      .ease-in-out,
+      .linear {
+        position: absolute;
+        left: 10px;
+        background-color: red;
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        margin: 10px;
+        animation-name: my-any;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      .ease {
+        top: 10px;
+        animation-timing-function: ease;
+      }
+      .ease-out {
+        top: 70px;
+        animation-timing-function: ease-in;
+
+      }
+      .ease-in-out {
+        top: 130px;
+      
+        animation-timing-function: ease-in-out;
+      }
+      .linear {
+        top: 200px;
+        animation-timing-function: linear;
+      }
+      @keyframes my-any {
+        0% {
+          left: 10px;
+        }
+        100% {
+          left: 500px;
+        }
+      }
+      .block {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        transition: 1s;
+        color: white;
+      }
+      .block:hover {
+        transform: rotate(360deg);
+        border-radius: 50%;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ease">ease</div>
+    <div class="ease-in-out">ease-in-out</div>
+    <div class="ease-out">ease-out</div>
+    <div class="linear">linear</div>
+
+    <div class="block">hello</div>
+  </body>
+</html>

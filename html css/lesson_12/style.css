@@ -1,0 +1,170 @@
+/* global css */
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1178px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.titleCenter {
+  font-family: 'Open Sans' sans-serif;
+  font-weight: 400;
+  font-size: 76px;
+  color: #0088A2;
+  text-align: center;
+}
+
+
+/* header */
+header {
+  padding: 50px 0;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 114px;
+}
+.title {
+  color: #0088A2;
+  font-family: 'Open sans' sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+}
+.logo, .title {
+  margin: 0 32px;
+}
+
+/* nav */
+nav {
+  background-color: #808080;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  width: 20%;
+  text-align: center;
+}
+.nav ul li a {
+  font-family: 'Open sans' sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+}
+.nav ul li:hover, .active {
+  background: #0088A2;
+}
+
+/* section 1 */
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.section1 .item {
+  width: 334px;
+  position: relative;
+  text-align: center;
+  height: 100%;
+}
+.section1 .item span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.section1 .item img {
+  width: 100%;
+}
+.section1 .parent {
+  position: relative;
+}
+.section1 .parent::before, 
+.section1 .parent::after{
+  position: absolute;
+  height: 100%;
+  content: '';
+  opacity: .7;
+}
+.section1 .parent::before {
+  width: 70%;
+  background-color: #6CD29B;
+  left: 0;
+  top: 0;
+  border-radius: 20px 0 0 20px;
+}
+.section1 .parent::after {
+  width: 30%;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 20px 20px 0;
+  background-color: #E05959;
+}
+.section2 img {
+  width: 100%;
+}
+.section3 {
+  height: 700px;
+  position: relative;
+  margin-top: 100px;
+}
+.question1,
+.question2,
+.question3,
+.question4,
+.question5 {
+  width: 250px;
+  height: 450px;
+  position: absolute;
+}
+.question1 {
+  left: 0;
+  top: 0;
+}
+.question2 {
+  left: 25%;
+  transform: translateX(-25%);
+  top: 30px;
+}
+.question4 {
+  left: 75%;
+  transform: translateX(-75%);
+  top: 30px;
+}
+.question3 {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+.question5 {
+  left: 100%;
+  top: 0;
+  transform: translateX(-100%)
+}
+
+
+
+  

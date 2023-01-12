@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .text {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+      }
+      .after,
+      .before {
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: red;
+        transition: 1s;
+      }
+      .text h2 {
+        margin: 0;
+      }
+      .after {
+        bottom: 0;
+        right: 0;
+      }
+      .before {
+        left: 0;
+        top: 0;
+      }
+      .text:hover .after,
+      .text:hover .before {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <div class="before"></div>
+      <h2>hello</h2>
+      <div class="after"></div>
+    </div>
+  </body>
+</html>

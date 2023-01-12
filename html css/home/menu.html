@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body {
+		margin: 0px;
+	}
+.div {
+	width: 100%;
+	background-color: skyblue;
+	font-size: 45px;
+	text-align: center;
+	padding: 50px 0px;
+	text-shadow: 3px 3px 3px white;
+}
+	.div2 {
+	background-color: blue;
+	text-align: center;
+}
+.div2 a { 
+	padding: 0px 20px;
+	line-height: 40px;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+}
+.div2 a:hover{
+	background-color: white;
+	color: blue;
+	transition: 0.6s;
+}
+.Onas {
+	position: relative;
+}
+.span2 {
+	height: 0px;
+	position: absolute;
+	overflow: hidden;
+	top: 100%;
+	left: 0%;
+	transition: 0.5s height;
+	border: 1px solid blue;
+}
+.Onas:hover .span2 {
+	height: 120px;	
+}	
+	</style>
+</head>
+<body>
+	<div class="div">News.Kg</div>
+	<div class="div2">
+			<a class="Glavnaya" href="">Главная</a>
+			<a class="Novosti" href="">Новости</a>
+			<a class="Kontackt" href="">Контакты </a>
+			<a class="Onas" href="">О нас
+				<div class="span2">Hello,</b> About us!
+			</div>
+		</a>
+			<a class="Karta" href="">Карта сайта</a>
+	</div>
+</body>
+</html>

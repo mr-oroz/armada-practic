@@ -1,0 +1,3 @@
+margin внешный отступ
+padding отступ
+border граница

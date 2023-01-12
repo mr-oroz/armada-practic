@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+      /* margin
+      padding
+      border
+      border-radius */
+
+      /* css */
+      /* global */
+      /* selector {
+      свойства: значение;
+    } */
+      #title {
+        color: yellow;
+      }
+      /* uppercase lowercase */
+      /* center left right */
+      /* dashed dottet solid double overline */
+      /* смещение-x | смещение-y * цвет */
+      h1 {
+        color: red;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: underline dashed;
+        text-shadow: 10px 10px 5px black;
+      }
+      /* p {
+      color: green;
+    } */
+      .p {
+        color: green;
+      }
+      /* вложение */
+      /* .p strong {
+        color: blue;
+      } */
+
+      /* i {
+        color: orange;
+      }
+
+      li {
+        color: orange;
+      } */
+      /* группировка */
+      .title,
+      li,
+      i {
+        color: orange;
+      }
+      .p {
+        text-shadow: 3px 3px 10px green;
+      }
+      /* font-size - размер пиксель */
+      /* font-style - italic normal */
+      /* font-weight - 200-900 bold normal */
+      /* font-family - name font */
+
+      .p strong {
+        text-shadow: none;
+        color: red;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* display - block блочный */
+      /* display - inline-block строчный */
+      /* background-color - color name */
+
+      .span {
+        background-color: red;
+        display: block;
+      }
+      .block {
+        background-color: green;
+        display: inline-block;
+      }
+      p {
+        background-color: red;
+      }
+      strong,
+      i,
+      a {
+        background-color: green;
+      }
+      img {
+        width: 200px;
+      }
+      /* width ширина  */
+      /* height высота  */
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #2e4a9b;
+        display: inline-block;
+        /* box-shadow: 10px 10px 10px black, 
+        -10px -10px 10px red, 
+        inset 10px 10px 10px blue; */
+        /* box-shadow: 0 0 0 1px silver, 0 -20px 0 -10px coral,
+          20px 0 0 -10px darkturquoise, 0 20px 0 -10px gold,
+          -20px 0 0 -10px green; */
+        box-shadow: -15px -15px 2px -5px rgba(123, 51, 90, 0.5),
+          -15px 15px 2px -5px rgba(60, 74, 123, 0.5),
+          15px -15px 2px -5px rgba(255, 0, 0, 0.5),
+          15px 15px 2px -5px rgba(60, 123, 68, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- html -->
+
+    <!-- блочный тег ширинасы 100процент
+  строчный тег ширинасы текстин ширинасы 100процент -->
+    <!-- syntax -->
+    <!-- блочные теги -->
+    <h1>заголовок 1</h1>
+    <h1 class="title">ЗАГОЛОВОК 2</h1>
+    <h1 id="title">заголовок 3</h1>
+    <h1 class="title">заголовок 4</h1>
+    <h1 id="title2">заголовок 5</h1>
+    <h1>заголовок 6</h1>
+    <h1 class="title">заголовок 7</h1>
+    <p>абзац</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+      <strong>doloribus</strong>.
+    </p>
+    <!-- строчные теги -->
+    <strong>strong</strong>
+    <i>курсивный</i>
+    <a href="">ссылка</a>
+    <!-- блочные теги -->
+    <ul>
+      <li>list 1</li>
+      <li>list 1</li>
+      <li>list 1</li>
+      <li>list 1</li>
+      <li>list 1</li>
+    </ul>
+    <p class="p">
+      <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit.
+      Officiis tenetur odio nihil quaerat qui fuga accusamus sapiente voluptate,
+      magnam maiores distinctio repellat ab consequuntur blanditiis dolorum
+      perspiciatis recusandae! Distinctio fugit repudiandae provident
+      blanditiis, recusandae reprehenderit expedita quis id amet et odit
+      excepturi doloribus doloremque officiis totam. Suscipit voluptatum tenetur
+      libero quisquam laboriosam! Nemo exercitationem corporis accusantium
+      accusamus, aperiam nesciunt neque, expedita earum in natus quibusdam
+      consequuntur tempore cum! Et hic, accusantium sequi doloremque ducimus
+      sapiente, dignissimos sint vero tenetur ad, enim assumenda nesciunt sed
+      culpa voluptatum? Ipsam incidunt fugit officia dolore tempore! Maiores,
+      autem pariatur! Laborum numquam non iusto <strong>eveniet</strong>.
+    </p>
+
+    <span class="span">строчный тэг span</span>
+
+    <div class="block">блочный тэг див</div>
+
+    <!-- <div class="block">
+      <h1></h1>
+      <p></p>
+      <img src="" alt="">
+      <a href=""></a>
+      <span></span>
+    </div>
+   
+    <div class="block2">
+      <img src="" alt="">
+      <p></p>
+    </div> -->
+    <img
+      src="https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/16:9/w_2560%2Cc_limit/1521-WIRED-Cat.jpeg"
+      alt=""
+    />
+    <br />
+    <br />
+    <div class="box"></div>
+    <!-- <div class="box"></div> -->
+  </body>
+</html>

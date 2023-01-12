@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRID</title>
+  <style>
+    .item {
+      background-color: aqua;
+    }
+    body {
+      display: flex;
+      gap: 100px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+    }
+
+    .container2 {
+      display: grid;
+      grid-template-columns: 368px 368px 368px;
+      grid-template-rows: 342px 342px 342px;
+      grid-template-areas: 
+      'item1 item2 item3'
+      'item4 item5 item3'
+      'item7 item7 item8';
+      gap: 33px;
+    }
+    .item1 {
+      grid-area: item1;
+    }
+    .item2 {
+      grid-area: item2;
+    }
+    .item3 {
+      grid-area: item3;
+    }
+    .item4 {
+      grid-area: item4;
+    }
+    .item5 {
+      grid-area: item5;
+    }
+    .item7 {
+      grid-area: item7;
+    }
+    .item8 {
+      grid-area: item8;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div> -->
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <div class="container2">
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+    <div class="item item3"></div>
+    <div class="item item4"></div>
+    <div class="item item5"></div>
+    <div class="item item7"></div>
+    <div class="item item8"></div>
+  </div>
+</body>
+</html>

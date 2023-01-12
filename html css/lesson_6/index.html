@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      background-color: red;
+      width: 100px;
+      height: 20px;
+      cursor: pointer;
+    }
+    /* .item:active {
+      background-color: green;
+    } */
+    .item:focus {
+      background-color: blue;
+    }
+
+    /* before до и after после */
+    .item2::before {
+      content: 'Before';
+      font-size: 20px;
+      color: red;
+    }
+    .item2::after {
+      content: 'After';
+      font-size: 20px;
+      color: red;
+    }
+
+    .item3 {
+      position: relative;
+      background-color: black;
+      width: 200px;
+      height: 200px;
+    }
+    .item3::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: red;
+      height: 10px;
+      width: 200px;
+    }
+    .item3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: green;
+      height: 10px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="item"></div>
+  <div class="item2">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto suscipit soluta corrupti maxime, cum ex maiores esse fugit et nihil molestias earum labore dignissimos laudantium dolorum exercitationem est quo beatae!
+  </div>
+  <div class="item3">
+  </div>
+</body>
+</html>

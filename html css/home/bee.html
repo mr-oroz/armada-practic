@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    body {
+      margin: 0;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+    }
+    header .title, 
+    header nav,
+    .content {
+      padding: 0 15px;
+    }
+    header .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    header nav {
+      background-color: crimson;
+    }
+    header nav ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      width: 10%;
+      text-align: center;
+      list-style: none;
+      padding: 0;
+      color: white;
+      cursor: pointer;
+      transition: 1s;
+    }
+    ul li:hover {
+      background-color: #fff;
+      color: crimson;
+    }
+    .content {
+      display: flex;
+      gap: 20px;
+    }
+    .left {
+      width: 60%;
+    }
+    
+    .left img,
+    .center img,
+    .right img {
+      width: 100%;
+    }
+    .center, .right {
+      width: 20%;
+    }
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 50px 15px;
+    }
+    footer h1 {
+      color: #fff;
+    }
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>Пчела.ru</h1>
+      <a href="">itc bootcamp</a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>News</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <section class="content">
+    <div class="left">
+      <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, qui?</h1>
+      <img src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+      <img src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg" alt="">
+    </div>
+    <div class="center">
+      <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, qui?</h1>
+      <img src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+      <img src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+    </div>
+    <div class="right">
+      <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, qui?</h1>
+      <img src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus facilis rerum mollitia ipsum aliquid aliquam accusantium sit? Id eum assumenda minus amet aliquam reiciendis commodi provident aliquid ullam! Veniam.</p>
+      <img src="https://img.atlasobscura.com/JWsBkDFjPwC9RnxCZSupeaSb8o2AcGCy2SiKXkXeGZk/rs:fill:1280:720:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8yYjNlNTA2ODMw/YWQ1ZDA0NTJfMzQ3/MTc1MTI4MDBfMjVi/NzhkNjkxMl9rLmpw/Zw.jpg" alt="">
+    </div>
+  </section>
+  <footer>
+    <h1>itc bootcamp.com</h1>
+  </footer>
+</body>
+</html>

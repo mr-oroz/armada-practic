@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <style>
+    body {
+      background-color: #222;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    h1 {
+      color: #fff;
+    }
+    .google {
+      position: relative;
+    }
+    .google .logo {
+      width: 350px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -130px;
+    }
+    .search-input {
+      border-radius: 30px;
+      background-color: #fff;
+      width: 450px;
+      position: relative;
+    }
+    .search-input input, 
+    .search-input img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) !important;
+    }
+
+    .search-input input {
+      width: 100%;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      padding-left: 20px;
+    }
+    .search-input img {
+      width: 10px;
+    }
+    .search-input .voice-icon {
+      left: 100%;
+    }
+    .search-input .search-icon {
+      left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="google">
+    <img class="logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-sva-scholarship-20.png" alt="">
+    <div class="search-input">
+      <input type="text">
+      <img class="voice-icon" src="https://freepngimg.com/thumb/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png" alt="">
+      <img class="search-icon" src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
